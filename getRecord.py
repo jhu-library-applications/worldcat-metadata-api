@@ -46,7 +46,7 @@ headers = {'Authorization': auth_header,
 file = open('marc.marcxml', 'w')
 
 # Make request.
-oclcNumbers = ['122412607', '1138904123']
+oclcNumbers = ['48395806']
 for oclc in oclcNumbers:
     r = requests.get(baseURL+'/bib/data/'+oclc, headers=headers)
     text = r.text
